@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="database.sql" rel="database">
+    <title>Login</title>
+    <style>
+        /* CSS para el formulario de inicio de sesión */
+        body {
+            font-family: 'Nunito Sans', 'Nunito', sans-serif;
+            background-color: #ff7b00;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .formulario {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 330px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 6px;
+            margin-bottom: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff7b00;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fc891d;
+        }
+
+        h6 {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+        <img src="Phoenix-logo-wbg.png" alt="Logo de Phoenix"
+            style="display: block; margin: 0 auto 20px; width: 100px;">
+        <h2>Iniciar Sesión</h2>
+        <form action="Phoenixintranet.html" method="post">
+            <div class="username">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="password">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <button type="submit">Iniciar Sesión</button>
+            <br>
+            <h6>¿Olvidaste tu contraseña? <a href="recuperar_contraseña.html">Recupérala aquí.</a></h6>
+            <h6>Nota: Este sitio no permite cuentas que sean creadas por el usuario. Si quiere
+                solicitar una cuenta, contacte a un administrador del sistema.
+            </h6>
+        </form>
+    </div>
+</body>
+
+</html>
